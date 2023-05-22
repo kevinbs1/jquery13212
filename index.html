@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Tarefas</title>
+  <style>
+    /* Estilos para os itens da lista */
+    li {
+      cursor: pointer;
+    }
+
+    li.completed {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de Tarefas</h1>
+
+  <form id="taskForm">
+    <label for="taskName">Nome da Tarefa:</label>
+    <input type="text" id="taskName" required>
+    <input type="submit" value="Cadastrar">
+  </form>
+
+  <ul id="taskList"></ul>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
